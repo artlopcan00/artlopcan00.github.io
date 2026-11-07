@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Políticas del publicador</title>
+<style>
+/* Documento legal sobrio: una columna de lectura, dos secciones enlazables por ancla */
+:root {
+  --bg: #f7f8f6; --fg: #1d2420; --muted: #5b665f; --line: #d7ddd8; --accent: #1f6f5c; --surface: #ffffff;
+  --display: "Fraunces", Georgia, serif; --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #141917; --fg: #e5ebe7; --muted: #9aa69f; --line: #2c3631; --accent: #6cc7ac; --surface: #1b211e; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #141917; --fg: #e5ebe7; --muted: #9aa69f; --line: #2c3631; --accent: #6cc7ac; --surface: #1b211e; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 17px/1.65 var(--body); padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 40px 64px; }
+.doc { max-width: 680px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px; }
+header { display: flex; flex-direction: column; gap: 10px; }
+h1 { font: 600 2.1rem/1.15 var(--display); margin: 0; text-wrap: balance; }
+h2 { font: 600 1.45rem/1.25 var(--display); margin: 0 0 6px; text-wrap: balance; }
+h3 { font-size: 1rem; margin: 18px 0 4px; }
+p, ul { margin: 0 0 10px; }
+ul { padding-left: 1.2em; }
+.meta { color: var(--muted); font-size: .92rem; }
+nav { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: .95rem; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+section { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 24px clamp(16px, 4vw, 32px); scroll-margin-top: 16px; }
+.en { border-top: 1px solid var(--line); margin-top: 18px; padding-top: 14px; color: var(--muted); font-size: .95rem; }
+.en h3 { color: var(--fg); }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Source+Sans+3:wght@400;600&display=swap">
+</head>
+<body>
+<div class="doc">
+  <header>
+    <h1>Políticas del publicador de vídeos propios</h1>
+    <p class="meta">Herramienta de uso personal de los canales ModoCapital y Mas Allá De Todo · Última actualización: 7 de noviembre de 2026</p>
+    <nav><a href="#privacidad">Política de privacidad</a><a href="#terminos">Términos de uso</a></nav>
+  </header>
+
+  <section id="privacidad">
+    <h2>Política de privacidad</h2>
+    <p>Esta herramienta solo la usa su propietario para enviar a sus propias cuentas de TikTok, YouTube e Instagram los vídeos que él mismo crea. No tiene otros usuarios.</p>
+    <h3>Qué datos usa</h3>
+    <ul>
+      <li>Información básica del perfil que concede TikTok (identificador de usuario y nombre visible), solo para comprobar a qué cuenta se envía cada vídeo.</li>
+      <li>Los vídeos y textos que crea el propietario, que se envían a la bandeja de borradores de su propia cuenta.</li>
+    </ul>
+    <h3>Dónde se guardan</h3>
+    <p>Los permisos de acceso se guardan cifrados en el ordenador del propietario. No se suben a ningún servidor propio ni de terceros.</p>
+    <h3>Con quién se comparten</h3>
+    <p>Con nadie. Los datos solo se envían a las API oficiales de cada plataforma. No se venden ni se usan para publicidad.</p>
+    <h3>Cómo retirar el acceso</h3>
+    <p>En TikTok: Ajustes y privacidad → Seguridad → Aplicaciones con permisos, y quitar esta app. Al hacerlo, se borran también los permisos guardados en el ordenador.</p>
+    <div class="en">
+      <h3>English summary</h3>
+      <p>This is a personal tool used only by its owner to send videos he creates to his own TikTok, YouTube and Instagram accounts. It reads the basic TikTok profile (user ID and display name) and uploads the owner's videos to his own drafts. Access tokens are stored encrypted on the owner's computer, are never shared or sold, and are only sent to the platforms' official APIs. Access can be revoked at any time from TikTok's app permissions settings.</p>
+    </div>
+  </section>
+
+  <section id="terminos">
+    <h2>Términos de uso</h2>
+    <ul>
+      <li>La herramienta es de uso personal y no se ofrece a otras personas.</li>
+      <li>Solo envía contenido original del propietario a sus propias cuentas, siempre como borrador o con su aprobación previa. La publicación final la decide él en la app de cada plataforma.</li>
+      <li>Respeta los términos de servicio y las normas de la comunidad de TikTok, YouTube e Instagram, y usa solo sus API oficiales.</li>
+      <li>El contenido generado con inteligencia artificial se marca como tal cuando la plataforma lo permite.</li>
+      <li>Estos términos pueden actualizarse; la fecha de arriba indica la última versión.</li>
+    </ul>
+    <div class="en">
+      <h3>English summary</h3>
+      <p>Personal, non-commercial tool not offered to third parties. It only sends the owner's original content to the owner's own accounts, as drafts or with his prior approval, using official APIs and following each platform's terms and community guidelines. AI-generated content is labelled where supported.</p>
+    </div>
+  </section>
+</div>
+</body>
+</html>
